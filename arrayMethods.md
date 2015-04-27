@@ -115,7 +115,7 @@ _.dropRight([1, 2, 3], -1);
 _.dropRight([]);
 []
 ```
-**_.dropRightWhile(array, [predicate=_.identity], [thisArg])**
+**\_.dropRightWhile(array, [predicate=\_.identity], [thisArg])**
 
 Creates a slice of array excluding elements dropped from the end. Elements are dropped until predicate returns falsey. The predicate is bound to thisArg and invoked with three arguments: (value, index, array).
 
@@ -146,7 +146,7 @@ _.dropRightWhile([1, 2, 3], function(n) {
 });
 [1, 2, 3]
 ```
-**_.dropWhile(array, [predicate=_.identity], [thisArg])**
+**\_.dropWhile(array, [predicate=\_.identity], [thisArg])**
 
 Creates a slice of array excluding elements dropped from the beginning. Elements are dropped until predicate returns falsey. The predicate is bound to thisArg and invoked with three arguments: (value, index, array).
 
