@@ -115,3 +115,55 @@ _.dropRight([1, 2, 3], -1);
 _.dropRight([]);
 []
 ```
+**_.dropRightWhile(array, [predicate=_.identity], [thisArg])**
+
+Creates a slice of array excluding elements dropped from the end. Elements are dropped until predicate returns falsey. The predicate is bound to thisArg and invoked with three arguments: (value, index, array).
+
+Returns the slice of array.
+```javascript
+_.dropRightWhile([1, 2, 3], function(n) {
+  return n > 1;
+});
+[1]
+
+_.dropRightWhile([1, 2, 3], function(n) {
+  return n == 2;
+});
+[1, 2, 3]
+
+_.dropRightWhile([1, 2, 3], function(n) {
+  return n == 3;
+});
+[1, 2]
+
+_.dropRightWhile([1, 2, 3], function(n) {
+  return n > 3;
+});
+[1, 2, 3]
+
+_.dropRightWhile([1, 2, 3], function(n) {
+  return n == 4;
+});
+[1, 2, 3]
+```
+**_.dropWhile(array, [predicate=_.identity], [thisArg])**
+
+Creates a slice of array excluding elements dropped from the beginning. Elements are dropped until predicate returns falsey. The predicate is bound to thisArg and invoked with three arguments: (value, index, array).
+
+Returns the slice of array.
+```javascript
+_.dropWhile([1, 2, 3], function(n) {
+  return n < 3;
+});
+[3]
+
+_.dropWhile([1, 2, 3], function(n) {
+  return n == 3;
+});
+[1, 2, 3]
+
+_.dropWhile([1, 2, 3], function(n) {
+  return n != 3;
+});
+[3]
+```
