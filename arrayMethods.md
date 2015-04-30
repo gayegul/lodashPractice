@@ -252,3 +252,82 @@ _.first([null]);
 _.first([NaN]);
 // → NaN
 ```
+**_.flatten(array, [isDeep])**
+
+Flattens a nested array. If isDeep is true the array is recursively flattened, otherwise it is only flattened a single level.
+
+Returns the new flattened array.
+
+```javascript
+_.flatten([1, [2, 3, [4]]]);
+// → [1, 2, 3, [4]]
+
+_.flatten([1, [2, 3, [4]]], true);
+// → [1, 2, 3, 4]
+
+_.flatten([1, [2, 3, [4]]], false);
+// → [1, 2, 3, [4]]
+
+_.flatten([1, [2, 3, 4]]);
+// → [1, 2, 3, 4]
+
+_.flatten([1, []]);
+// → [1]
+
+_.flatten([[]]);
+// → []
+```
+**_.flattenDeep(array)**
+
+Recursively flattens a nested array.
+
+Returns the new flattened array.
+```javascript
+_.flattenDeep([1, [2, 3, [4]]]);
+// → [1, 2, 3, 4]
+
+_.flattenDeep([1, [2, 3, []]]);
+// → [1, 2, 3]
+
+_.flattenDeep([[]]);
+// → []
+```
+**_.indexOf(array, value, [fromIndex=0])**
+
+Gets the index at which the first occurrence of value is found in array using SameValueZero for equality comparisons. If fromIndex is negative, it is used as the offset from the end of array. If array is sorted providing true for fromIndex performs a faster binary search.
+
+[fromIndex=0] (boolean|number): The index to search from or true to perform a binary search on a sorted array.
+
+Returns the index of the matched value, else -1.
+```javascript
+_.indexOf([1, 2, 1, 2], 2);
+// → 1
+
+_.indexOf([1, 2, 1, 2], 0);
+// → -1
+
+_.indexOf([1, 2, 1, 2], 1);
+// → 0
+
+_.indexOf([1, 2, 1, 2], 1, 1); // using `fromIndex`
+// → 2
+
+_.indexOf([1, 2, 1, 2], 1, 2);
+// → 2
+
+_.indexOf([1, 2, 1, 2], 1, 3);
+// → -1
+
+_.indexOf([1, 1, 2, 2], 2, true); // performing a binary search
+// → 2
+```
+****
+```javascript
+****
+```javascript
+****
+```javascript
+****
+```javascript
+****
+```javascript
