@@ -1,2 +1,2 @@
 # lodash
-Lodash practices, method definitions and edge cases
+Lodash practice with method definitions and edge cases
