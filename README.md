@@ -1,2 +1,5 @@
 # lodash-notes
-Lodash notes and practice with method definitions and edge cases
+
+Lodash notes with method definitions and edge cases
+
+Lololodash practice solutions
