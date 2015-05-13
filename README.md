@@ -1,5 +1,7 @@
 # lodash-notes
 
-Lodash notes with method definitions and edge cases
+Playing with lodash for practice:
 
-Lololodash practice solutions
+  Lodash practice, notes with method definitions, and edge cases
+  Lololodash practice solutions
+  Rewriting lodash methods using vanilla JS
